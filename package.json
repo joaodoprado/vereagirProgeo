@@ -1,0 +1,26 @@
+{
+  "name": "vereagirprogeo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "encore dev",
+    "watch": "encore dev --watch",
+    "build": "encore production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.24.9",
+    "@babel/preset-env": "^7.24.8",
+    "@symfony/webpack-encore": "^4.6.1",
+    "core-js": "^3.37.1",
+    "file-loader": "^6.2.0",
+    "postcss-loader": "^7.0.0",
+    "sass": "^1.77.8",
+    "sass-loader": "^14.0.0",
+    "webpack": "^5.93.0",
+    "webpack-notifier": "^1.15.0"
+  }
+}

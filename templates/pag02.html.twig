@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver&Agir</title>
+    <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
+</head>
+<body>
+    <main class="main-page">
+        <header>
+            <img src="{{ asset('images/logoprogeo.png') }}" alt="logo_progeo">
+            <h1>Ver&Agir</h1>
+        </header>
+        
+        <form action="{{ path('process_form') }}" method="POST">
+            <div class="form-group">
+                <label for="tipoDeSolicitacao">Tipo de Solicitação:</label>
+                <select name="tipoDeSolicitacao" id="tipoDeSolicitacao">
+                    <option value="" selected></option>
+                    <option value="Poste Danificado">Poste Danificado</option>
+                </select>
+            </div>
+            <div class="center">
+                <button type="submit" class="btn">
+                    <span>Enviar</span>
+                </button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>©PROGEO ENGENHARIA 2024</p>
+    </footer>
+
+    <script src="{{ asset('assets/js/app.js') }}"></script>
+</body>
+</html>

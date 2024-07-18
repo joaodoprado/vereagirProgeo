@@ -3,3 +3,23 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+
+# config/routes.yaml
+
+app_pag01:
+    path: /pag01
+    controller: App\Controller\Pag01Controller::index
+
+app_pag02:
+    path: /pag02
+    controller: App\Controller\Pag02Controller::index
+
+app_pag03:
+    path: /pag03
+    controller: App\Controller\Pag03Controller::index
+
+process_form:
+    path: /submit-form
+    controller: App\Controller\FormController::processForm
+    methods: ['POST']

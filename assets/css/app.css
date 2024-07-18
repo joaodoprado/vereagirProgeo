@@ -1,0 +1,329 @@
+.hidden {
+    display: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height of the viewport */
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+main {
+    flex-grow: 1; /* Allow main to grow and fill available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-image: url(../images/pexels-oandremoura-2402438.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px; /* Adjust padding as needed */
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: bolder;
+    color: white;
+    background: blue;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 8px 8px;
+    box-sizing: border-box;
+    height: 0.1em;
+}
+
+footer p {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    bottom: 6px;
+}
+
+#cameraContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none; /* Inicialmente oculto */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Cor de fundo para o vídeo */
+    z-index: 1000; /* Garante que fique acima dos outros elementos */
+}
+
+#imagePreview {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cameraView {
+    width: 400px;
+    height: 700px;
+    object-fit: cover; /* Garante que o vídeo preencha o contêiner */
+    border-radius: 8px; /* Adiciona bordas arredondadas para um visual mais elegante */
+}
+
+#cameraContainer button {
+    margin: 10px;
+    padding: 10px;
+    background-color: #0984ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cameraContainer button:hover {
+    background-color: blue;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    position: relative;
+    bottom: 28vh;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    z-index: 1000;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 10px;
+    background-color: rgba(234, 221, 221, 0.24);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.pag03 {
+    display: flex;
+    position: relative;
+    bottom: 5vh;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 20px;
+    background-color: rgba(234, 221, 221, 0.24);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.pag03 img {
+    max-width: 60px;
+    margin-right: 10px;
+}
+
+.pag03 h1 {
+    font-size: 2em;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+header img {
+    max-width: 60px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form, input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Arredonda os cantos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adiciona sombra */
+}
+
+.coordinate-group {
+    display: flex;
+    gap: 10px;
+}
+
+.latitude, .longitude {
+    flex: 1; /* Distribui o espaço disponível igualmente entre latitude e longitude */
+    background-color: rgba(255, 255, 255, 0.322);
+    cursor: not-allowed;
+}
+
+textarea {
+    width: 100%;
+    height: 6em;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: #0984ff;
+    border: 1px solid #91C9FF;
+    outline: none;
+    transition: 400ms ease-in-out;
+    position: relative;
+    border-radius: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    
+}
+
+.btn:hover {
+    background: blue;
+    transition: 800ms;
+}
+
+.btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    position: relative;
+    z-index: 1;
+}
+
+#discardButton {
+    width: auto;
+    text-align: center;
+    align-content: center;
+    margin-left: 40%;
+    cursor: pointer;
+    background: #ff0000fb;
+    border: 1px solid #000000;
+    transition: 400ms ease-in-out;
+    border-radius: 10%;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+
+.enviarImagem {
+    background-color: rgb(211, 207, 207);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+    width: fit-content;
+    margin: 50px auto 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-color: white;
+    color: #000000;
+    background-image: linear-gradient(45deg, white 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background 500ms ease-in-out;
+}
+
+.enviarImagem:hover {
+    background-position: 0;
+}
+
+.enviarImagem img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+}
+
+.enviarImagem p {
+    margin: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .pag03 h1 {
+        font-size: 1.5em;
+    }
+
+    .pag03 img {
+        max-width: 40px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header img {
+        max-width: 40px;
+    }
+
+    .btn {
+        width: 140px;
+        height: 50px;
+    }
+
+    .btn span {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 0.6rem;
+    }
+}
