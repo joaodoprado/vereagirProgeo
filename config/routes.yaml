@@ -1,15 +1,12 @@
-controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
-
-
 # config/routes.yaml
+
+controllers:
+    resource: '../src/Controller/'
+    type: attribute
 
 app_pag01:
     path: /pag01
-    controller: App\Controller\Pag01Controller::index
+    controller: App\Controller\HomeController::index
 
 app_pag02:
     path: /pag02

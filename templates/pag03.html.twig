@@ -31,29 +31,26 @@
             <button id="discardButton" onclick="discardPhoto()">Descartar</button>
         </div>
 
-        <form action="{{ path('process_form') }}" method="POST">
-            <div class="form-group">
-                <label for="latitude">Latitude:</label>
-                <input type="text" name="latitude" class="latitude">
+        <form action="{{ path('process_pag03') }}" method="POST">
+    <div class="form-group">
+        <label for="latitude">Latitude:</label>
+        <input type="text" name="latitude" class="latitude">
 
-                <label for="longitude">Longitude:</label>
-                <input type="text" name="longitude" class="longitude">
+        <label for="longitude">Longitude:</label>
+        <input type="text" name="longitude" class="longitude">
 
-                <label for="descricao">Descrição</label>
-                <textarea name="descricao" id="descricao"></textarea>
-            </div>
-            <div class="center">
-                <button type="submit" class="btn">
-                    <span>Enviar</span>
-                </button>
-            </div>
-        </form>
+        <label for="descricao">Descrição</label>
+        <textarea name="descricao" id="descricao"></textarea>
+    </div>
+    <button type="submit">Enviar</button>
+</form>
+
     </main>
 
     <footer>
         <p>©PROGEO ENGENHARIA 2024</p>
     </footer>
     
-    <script src="{{ asset('./scripts.js') }}"></script>
+    <script src="{{ asset('scripts.js') }}"></script>
 </body>
 </html>

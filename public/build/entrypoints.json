@@ -1,5 +1,11 @@
 {
   "entrypoints": {
+    "scripts": {
+      "js": [
+        "/build/runtime.js",
+        "/build/scripts.js"
+      ]
+    },
     "styles": {
       "js": [
         "/build/runtime.js"

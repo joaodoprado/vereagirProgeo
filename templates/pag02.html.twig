@@ -4,35 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ver&Agir</title>
-    <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/styles.css') }}">
 </head>
 <body>
     <main class="main-page">
         <header>
-            <img src="{{ asset('images/logoprogeo.png') }}" alt="logo_progeo">
+            <img src="{{ asset('build/images/logoprogeo.png') }}" alt="logo_progeo">
             <h1>Ver&Agir</h1>
         </header>
         
-        <form action="{{ path('process_form') }}" method="POST">
-            <div class="form-group">
-                <label for="tipoDeSolicitacao">Tipo de Solicitação:</label>
-                <select name="tipoDeSolicitacao" id="tipoDeSolicitacao">
-                    <option value="" selected></option>
-                    <option value="Poste Danificado">Poste Danificado</option>
-                </select>
-            </div>
-            <div class="center">
-                <button type="submit" class="btn">
-                    <span>Enviar</span>
-                </button>
-            </div>
-        </form>
+        <form action="{{ path('process_pag02') }}" method="POST">
+    <div class="form-group">
+        <label for="campo3">Campo 3:</label>
+        <input type="text" name="campo3" id="campo3">
+
+        <label for="campo4">Campo 4:</label>
+        <input type="text" name="campo4" id="campo4">
+    </div>
+    <button type="submit">Enviar</button>
+</form>
+
     </main>
 
     <footer>
         <p>©PROGEO ENGENHARIA 2024</p>
     </footer>
 
-    <script src="{{ asset('assets/js/app.js') }}"></script>
+    <script src="{{ asset('scripts.js') }}"></script>
 </body>
 </html>
